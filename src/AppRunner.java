@@ -88,19 +88,11 @@ public class AppRunner {
 
         print("Введите сумму для пополнения баланса карты:");
         double topUpAmount = Double.parseDouble(fromConsole());
-
-        // Add logic to handle card payment
-        // You can check the validity of the account number and pin code
-        // and deduct the appropriate amount from the account.
-
-        // For demonstration purposes, let's assume the card payment is successful
         coinAcceptor.setAmount((int) (coinAcceptor.getAmount() + topUpAmount));
 
         print("Ваша карта успешно пополнена!");
         print("Остаток на балансе: " + coinAcceptor.getAmount());
     }
-
-
 
     private void handleCashPayment(UniversalArray<Product> products) {
         showActions(products);
