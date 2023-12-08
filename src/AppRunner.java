@@ -62,7 +62,6 @@ public class AppRunner {
         print(" h - Выйти");
         print("== == == == == == == == ");
         System.out.printf("Выберите способ оплаты:\nc - картой\nn - наличными\n");
-        print("== == == == == == == == ");
         String paymentMethod = fromConsole().substring(0, 1);
 
         if ("a".equalsIgnoreCase(paymentMethod)) {
